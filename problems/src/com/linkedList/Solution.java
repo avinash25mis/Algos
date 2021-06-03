@@ -13,7 +13,11 @@ package com.linkedList;
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-
+/*
+* this was my forst approach which did not worked and did not have carryforward handeling
+*
+*
+* */
 class Solution {
 
     public static void main(String[] args) {
