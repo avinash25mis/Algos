@@ -1,4 +1,4 @@
-package com.binaryTree;
+package com.binaryTree.core;
 
 /**
  * @author avinash.a.mishra
@@ -7,7 +7,7 @@ public class BinaryTree {
 
    public Node root;
 
-    BinaryTree() {
+    public BinaryTree() {
         root = null;
     }
 }

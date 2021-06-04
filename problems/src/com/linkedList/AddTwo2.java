@@ -1,19 +1,22 @@
 package com.linkedList;
 
+import com.linkedList.core.ListNode;
+import com.linkedList.core.MyLinkListUtils;
+
 public class AddTwo2 {
 
 
     public static void main(String[] args) {
         int arr1[]={9,9,9,9,9,9,9};
         int arr2[]={9,9,9,9};
-        ListNode l1 = MyLinkListUtil.generateLinkedList(arr1);
-        MyLinkListUtil.printTheLinkedList(l1);
+        ListNode l1 = MyLinkListUtils.generateLinkedList(arr1);
+        MyLinkListUtils.printTheLinkedList(l1);
 
-        ListNode l2 = MyLinkListUtil.generateLinkedList(arr2);
-        MyLinkListUtil.printTheLinkedList(l2);
+        ListNode l2 = MyLinkListUtils.generateLinkedList(arr2);
+        MyLinkListUtils.printTheLinkedList(l2);
 
         ListNode result = addTwoNumbers(l1, l2);
-        MyLinkListUtil.printTheLinkedList(result);
+        MyLinkListUtils.printTheLinkedList(result);
     }
 
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {

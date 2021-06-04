@@ -1,6 +1,8 @@
-package com.linkedList;
+package com.linkedList.core;
 
-public class MyLinkListUtil {
+
+
+public class MyLinkListUtils {
 
     public  static ListNode generateLinkedList(int arr[]){
         ListNode topParent= new ListNode();

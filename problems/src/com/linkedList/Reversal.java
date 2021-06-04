@@ -1,14 +1,17 @@
 package com.linkedList;
 
+import com.linkedList.core.ListNode;
+import com.linkedList.core.MyLinkListUtils;
+
 public class Reversal {
 
     public static void main(String[] args) {
         int arr[]={2,4,6,8,0};
-        ListNode listNode = MyLinkListUtil.generateLinkedList(arr);
-        MyLinkListUtil.printTheLinkedList(listNode);
+        ListNode listNode = MyLinkListUtils.generateLinkedList(arr);
+        MyLinkListUtils.printTheLinkedList(listNode);
        // ListNode reversed=reverseTwoStartingPointer(listNode);
         ListNode reversed=reverseThreeStartingPointer(listNode);
-        MyLinkListUtil.printTheLinkedList(reversed);
+        MyLinkListUtils.printTheLinkedList(reversed);
     }
 
     private static ListNode reverseThreeStartingPointer(ListNode listNode) {

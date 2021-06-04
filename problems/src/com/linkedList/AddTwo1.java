@@ -3,6 +3,9 @@ package com.linkedList;
 /**
  * @author avinash.a.mishra
  */
+
+import com.linkedList.core.ListNode;
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {
