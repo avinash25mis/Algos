@@ -1,5 +1,8 @@
 package com.stringSlider;
-
+/*
+find the longest non repetative
+ O(n*n)
+* */
 public class StringSlider3 {
 
     public static void main(String[] args) {
@@ -9,7 +12,7 @@ public class StringSlider3 {
     }
 
     private static void getLongestNonRepeting(String str) {
-        int macLength=0;
+        int maxLength=0;
 
         for(int i=0;i<str.length();i++){
 
@@ -21,7 +24,7 @@ public class StringSlider3 {
                      break;
                 }else{
                     arr[str.charAt(j)-'a']=true;
-                    macLength=Math.max(macLength,j-i+1);
+                    maxLength=Math.max(maxLength,j-i+1);
                 }
 
             }
@@ -29,6 +32,6 @@ public class StringSlider3 {
             arr[str.charAt(i)-'a']=false;
         }
 
-        System.out.println("max length :"+macLength);
+        System.out.println("max length :"+maxLength);
     }
 }

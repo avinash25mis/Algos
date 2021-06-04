@@ -8,7 +8,7 @@ import java.util.Set;
 /*
 to check if all charater of string are unique
 to check if the strong contains no repititation*/
-public class StringSlider1 {
+public class StringSliderUtils {
 
     public static void main(String[] args) {
         String string="avinash";
@@ -19,7 +19,7 @@ public class StringSlider1 {
         //checkMap();
     }
 
-    private static void checkSet() {
+    private static void checkSetBehaviour() {
         Set<String> set= new HashSet<>();
         boolean a = set.add("a");
         System.out.println(a);
@@ -28,7 +28,7 @@ public class StringSlider1 {
     }
 
 
-    private static void checkMap() {
+    private static void checkMapBehaviour() {
         Map<String,String> map= new HashMap<>();
         String put = map.put("a", "avinash");
         System.out.println(put);
@@ -50,6 +50,8 @@ public class StringSlider1 {
     * but unforrtunetely this might fail if we have a combination of
     *  lower and upper case both and we are to consider 'a' & 'A' as different character
     * */
+
+
     public static boolean checkByBooleanArray(String string) {
         boolean allUnique=true;
         boolean [] arr= new boolean[26];
@@ -67,7 +69,9 @@ public class StringSlider1 {
     }
 
 
-
+    /*
+     * check given passed string has all non repetitive
+     * */
 
     public static boolean checkByCharAt(String string) {
       boolean allUnique=true;
@@ -84,6 +88,10 @@ public class StringSlider1 {
       }
       return  allUnique;
     }
+
+    /*
+     * check in given index range of  passed string has all non repetitive
+     * */
 
     public static boolean checkByCharAt(String string, int i,int j) {
         boolean allUnique=true;

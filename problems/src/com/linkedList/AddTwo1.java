@@ -18,7 +18,7 @@ package com.linkedList;
 *
 *
 * */
-class Solution {
+class AddTwo1 {
 
     public static void main(String[] args) {
         addTwoNumbers(null,null);

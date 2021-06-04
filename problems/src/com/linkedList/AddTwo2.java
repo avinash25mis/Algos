@@ -1,11 +1,11 @@
 package com.linkedList;
 
-public class Solution2 {
+public class AddTwo2 {
 
 
     public static void main(String[] args) {
-      int arr1[]={9,9,9,9,9,9,9};
-      int arr2[]={9,9,9,9};
+        int arr1[]={9,9,9,9,9,9,9};
+        int arr2[]={9,9,9,9};
         ListNode l1 = MyLinkListUtil.generateLinkedList(arr1);
         MyLinkListUtil.printTheLinkedList(l1);
 

@@ -3,7 +3,7 @@ package com.stringSlider;
 
 /*
 * find the longest non repetative
-*
+* O(n*n*n)
 * */
 public class StringSlider2 {
 
@@ -19,7 +19,7 @@ public class StringSlider2 {
         int endIndex=-1;
         for(int i=0;i<str.length();i++){
             for(int j=i;j<str.length();j++){
-                if(StringSlider1.checkByCharAt(str,i,j)){
+                if(StringSliderUtils.checkByCharAt(str,i,j)){
                     //maxLength=Math.max(maxLength,j-i+1);
                     if(j-i+1>maxLength) {
                         maxLength=j-i+1;
