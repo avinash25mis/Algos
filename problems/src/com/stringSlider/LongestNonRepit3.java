@@ -59,23 +59,23 @@ public class LongestNonRepit3 {
         for (int j = 0; j < str.length(); j++) {
 
             // Find the last index of str[j]
-            // Update i (starting index of current window)
-            // as maximum of current value of i and last
-            // index plus 1
+            // if found Update i (starting index of current window)
+             // else -1+1=0  which will never be max
             i = Math.max(i, lastIndex[str.charAt(j)] + 1);
 
-            // Update result if we get a larger window
-            if(longest<j-i+1){
-                bigining=i;
-            }
 
 
             // Update last index of j.
             lastIndex[str.charAt(j)] = j;
 
-            longest = Math.max(longest, j - i + 1);
+            // Update result if we get a larger window
+            if(longest<j-i+1){
+                bigining=i;
+                ending=j;
+                longest=j-i+1;
+            }
 
-
+            //longest = Math.max(longest, j - i + 1);
 
         }
 
