@@ -5,7 +5,7 @@ package com.stringSlider;
 * find the longest non repetative
 * O(n*n*n)
 * */
-public class StringSlider2 {
+public class LongestNonRepit1 {
 
     public static void main(String[] args) {
        String str="aavinasha";

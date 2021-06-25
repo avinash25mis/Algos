@@ -3,7 +3,7 @@ package com.stringSlider;
 find the longest non repetative
  O(n*n)
 * */
-public class StringSlider3 {
+public class LongestNonRepit2 {
 
     public static void main(String[] args) {
         String str="aviakanshm";
