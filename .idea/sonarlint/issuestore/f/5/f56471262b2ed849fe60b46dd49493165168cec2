@@ -1,0 +1,23 @@
+
+Y
+java:S1854">Remove this useless assignment to local variable "allUnique2".(ÝñŸþÿÿÿÿÿ
+J
+java:S1481"/Remove this unused "allUnique2" local variable.(ÝñŸþÿÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(´ÒÒŽùÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(¬Š—Âûÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(æ¨¤šøÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(š—°øÿÿÿÿ
+S	java:S106""9Replace this use of System.out or System.err by a logger.(ýòã¢üÿÿÿÿ
+S	java:S106$"9Replace this use of System.out or System.err by a logger.(é¼Ãàúÿÿÿÿ
+N	java:S106&"9Replace this use of System.out or System.err by a logger.(µˆœÑ
+=
+java:S1125<"'Remove the unnecessary boolean literal.(‚ÜÕ’
+K
+java:S1854Q"5Remove this useless assignment to local variable "c".(´ Ä—
+<
+java:S1481Q"&Remove this unused "c" local variable.(´ Ä—
+L
+java:S1144"6Remove this unused private "checkSetBehaviour" method.(Š»ð
+Q
+java:S1144"6Remove this unused private "checkMapBehaviour" method.(ãßõ‡ýÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¾ŸÒŠúÿÿÿÿ

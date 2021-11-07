@@ -1,0 +1,13 @@
+
+Q	java:S125"<This block of commented-out lines of code should be removed.(ËàœÆ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(²ÄÓ«ıÿÿÿÿ
+S	java:S106""9Replace this use of System.out or System.err by a logger.(…ùŸàıÿÿÿÿ
+S	java:S106%"9Replace this use of System.out or System.err by a logger.(ÏÿÓ¯ûÿÿÿÿ
+A
+java:S1905-"&Remove this unnecessary cast to "int".(ğëÙ©ıÿÿÿÿ
+<
+java:S19051"&Remove this unnecessary cast to "int".(èì­
+S	java:S1066"9Replace this use of System.out or System.err by a logger.(²ÄÓ«ıÿÿÿÿ
+T
+java:S1144"9Remove this unused private "usingBitwiseOperator" method.(Ø³œ÷üÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¾ŸÒŠúÿÿÿÿ
