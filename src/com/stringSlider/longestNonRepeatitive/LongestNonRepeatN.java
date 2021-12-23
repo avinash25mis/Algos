@@ -1,4 +1,4 @@
-package com.stringSlider;
+package com.stringSlider.longestNonRepeatitive;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -6,16 +6,16 @@ import java.util.HashMap;
 /**
  * @author avinash.a.mishra
  */
-public class LongestNonRepit3 {
+public class LongestNonRepeatN {
 
     public static void main(String[] args) {
         String str="aavinasha";
         // String str="vishal";
-        getLongestNonRepetingByArray(str);
-        getLongestNonRepetingByMap(str);
+        getLongestNonRepeatingByArray(str);
+        getLongestNonRepeatingByMap(str);
     }
 
-    private static int getLongestNonRepetingByMap(String str) {
+    private static int getLongestNonRepeatingByMap(String str) {
 
         HashMap<Character, Integer> seen = new HashMap<>();
         int maximum_length = 0;
@@ -40,7 +40,7 @@ public class LongestNonRepit3 {
         return maximum_length;
     }
 
-    private static int getLongestNonRepetingByArray(String str) {
+    private static int getLongestNonRepeatingByArray(String str) {
 
 
         int longest = 0; // result

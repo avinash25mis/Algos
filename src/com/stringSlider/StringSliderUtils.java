@@ -7,7 +7,7 @@ import java.util.Set;
 
 /*
 to check if all charater of string are unique
-to check if the strong contains no repititation*/
+to check if the string contains no repititation*/
 public class StringSliderUtils {
 
     public static void main(String[] args) {

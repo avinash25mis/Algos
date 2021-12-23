@@ -1,9 +1,9 @@
-package com.stringSlider;
+package com.stringSlider.longestNonRepeatitive;
 /*
 find the longest non repetative
  O(n*n)
 * */
-public class LongestNonRepit2 {
+public class LongestNonRepeatN2 {
 
     public static void main(String[] args) {
         String str="aviakanshm";

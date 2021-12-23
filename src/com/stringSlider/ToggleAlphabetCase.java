@@ -34,7 +34,6 @@ public class ToggleAlphabetCase {
             System.out.println("yes");
         }
 
-        System.out.println(str.indexOf('a'));
 
         StringBuilder result=new StringBuilder();
 

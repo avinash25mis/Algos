@@ -1,11 +1,13 @@
-package com.stringSlider;
+package com.stringSlider.longestNonRepeatitive;
 
+
+import com.stringSlider.StringSliderUtils;
 
 /*
 * find the longest non repetative
 * O(n*n*n)
 * */
-public class LongestNonRepit1 {
+public class LongestNonRepeatN3 {
 
     public static void main(String[] args) {
        String str="aavinasha";

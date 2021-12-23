@@ -2,29 +2,32 @@ package com.array;
 
 /**
  * @author avinash.a.mishra
+ *
+ * rolling a dice n number of time, calculated the mean m but
+ * forgot certain elements k from the rolls
  */
 public class ForgottenRollsFromMean {
   public static void main(String arg[]){
-       int[] arr={3,2,4,3};
-       int f=2;
-       int m=4;
+       int[] remembered={3,2,4,3};
+       int forgot=2;
+       int actualMean=4;  //12+/6
 /*         function should return [6,5]*/
-      solution(arr,f,m);
+      solution(remembered,forgot,actualMean);
   }
     public static int[] solution(int[] A, int F, int M) {
-        int sum=0;
+        int currentSum=0;
         int forgot[]=new int[F];
         int notPossible[]=new int[1];
-        int total=F+A.length;
+        int totalElement=F+A.length;
         for(int i=0;i<A.length;i++){
-            sum=sum+A[i];
+            currentSum=currentSum+A[i];
         }
 
         if(F<1|| M<1|| M>6){
             return notPossible;
         }
-
-        int actualSum=(M*total)-sum;
+     //mean=sum/totalElement
+        int actualSum=(M*totalElement)-currentSum;
         if(F>actualSum || actualSum/F>6){
             return notPossible;
         }
