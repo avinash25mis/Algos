@@ -1,4 +1,4 @@
-package com.stringSlider.longestNonRepeatitive;
+package com.slidingWindow.longestNonRepeatitive;
 /*
 find the longest non repetative
  O(n*n)

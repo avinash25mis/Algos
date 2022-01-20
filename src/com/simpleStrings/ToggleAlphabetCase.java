@@ -1,4 +1,4 @@
-package com.stringSlider;
+package com.simpleStrings;
 
 /**
  * @author avinash.a.mishra
@@ -30,9 +30,6 @@ public class ToggleAlphabetCase {
 
     public static void usingBasicOperator() {
         String str="I am Kinga";
-        if(str.contains("a")){
-            System.out.println("yes");
-        }
 
 
         StringBuilder result=new StringBuilder();

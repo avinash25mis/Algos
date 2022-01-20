@@ -1,4 +1,4 @@
-package com.stringSlider;
+package com.removeRepeatitive;
 
 /**
  * @author avinash.a.mishra

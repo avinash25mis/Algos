@@ -1,4 +1,4 @@
-package com.stringSlider.longestNonRepeatitive;
+package com.slidingWindow.longestNonRepeatitive;
 
 import java.util.Arrays;
 import java.util.HashMap;

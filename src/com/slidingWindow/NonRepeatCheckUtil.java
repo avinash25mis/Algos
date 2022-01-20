@@ -1,4 +1,4 @@
-package com.stringSlider;
+package com.slidingWindow;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -8,35 +8,17 @@ import java.util.Set;
 /*
 to check if all charater of string are unique
 to check if the string contains no repititation*/
-public class StringSliderUtils {
+public class NonRepeatCheckUtil {
 
     public static void main(String[] args) {
         String string="avinash";
        boolean allUnique = checkByCharAt(string);
        boolean allUnique2 = checkByBooleanArray(string);
        System.out.println(allUnique);
-        //checkSet();
-        //checkMap();
-    }
 
-    private static void checkSetBehaviour() {
-        Set<String> set= new HashSet<>();
-        boolean a = set.add("a");
-        System.out.println(a);
-        boolean b = set.add("a");
-        System.out.println(b);
     }
 
 
-    private static void checkMapBehaviour() {
-        Map<String,String> map= new HashMap<>();
-        String put = map.put("a", "avinash");
-        System.out.println(put);
-        String put2 = map.put("a", "abbbas");
-        System.out.println(put2);
-
-        System.out.println(map);
-    }
 
     /*
     * this solution would be best if it is defined that we have either all lower case or all uppercase

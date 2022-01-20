@@ -1,11 +1,14 @@
-package com.stringSlider.subArray;
+package com.slidingWindow.subArray;
 
 public class Intro {
 
     /*
     * finding all the subArray in a string (of a particular length n)
     * 1. finding sum of all subarray of the string
-    * 2.
+    *
+    * we will find that the below naive way does repeatative worm
+    * as in firest iterartion we find some of 0+1+2 and again we find the sum
+    * of 1+2+3 but although we already have the sum for 1+2 from above
     *
     *
     *
