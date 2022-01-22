@@ -1,0 +1,7 @@
+
+- as it run via stack so we keep on submitting the sub tasks to stack but these subtasks gets executed in reverse order
+
+- in case using some incremental counter to pass as parameter in each call use ++i rather than i++ (don't work )
+- or you may rather increment it before pass it into the parameter
+
+- all the subtask wait  for other subtask which are called after it  to gets finished
