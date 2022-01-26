@@ -2,43 +2,10 @@ package com.recursions;
 
 public class fibonacci {
 
-    public static void main(String[] args) {
-       int n=12;
-        int i = fibonacciByRecursion(6);
-        System.out.println(i);
-        //fibonacciByRecursionMyTry(n);
 
-    /*    for(int i = 0; i < n; i++){
-            int result = fibonacciByRecursion(i);
-            System.out.println(result);
-        }
-*/
-
-    }
-
-    private static void fibonacciByRecursionMyTry(int n) {
-        if(n<0){
-            return ;
-        }
-        fibonacciByRecursionMyTry(--n);
-        int p= n-1+n-1;
-        System.out.println(p);
-
-    }
-
-
-    private static int fibonacciByRecursion(int n) {
-        if(n<=1){
-            return n;
-        }
-
-       return fibonacciByRecursion(n-1)+fibonacciByRecursion(n-2);
-    }
-
-
- /*
- * at last it will find the  sum 0+1  
- * */
+    /*
+     * at last it will find the  sum 0+1
+     * */
 
 
 /*                       fib(5)
@@ -61,7 +28,51 @@ public class fibonacci {
     fibonacciRecursion (1) = 1
     fibonacciRecursion (2) \\ It will call for 0 and 1
     fibonacciRecursion (0) = 0
-    fibonacciRecursion (1) = 1*/
+    fibonacciRecursion (1) = 1
+
+    */
+
+
+    public static void main(String[] args) {
+       int n=12;
+       // fibonacciByRecursionMyTry(6);
+
+
+
+        for(int i = 0; i < n; i++){
+            int result = fibonacciByRecursion(i);
+            System.out.println(result);
+        }
+
+    }
+
+
+
+    private static int fibonacciByRecursion(int n) {
+        if(n<=1){
+            return n;
+        }
+
+        return fibonacciByRecursion(n-1)+fibonacciByRecursion(n-2);
+        //again we multiplyihg with the result of the method return
+    }
+
+
+    private static void fibonacciByRecursionMyTry(int n) {
+        if(n<0){
+            return ;
+        }
+        fibonacciByRecursionMyTry(--n);
+        int p= n-1+n-1;
+        System.out.println(p);
+
+    }
+
+
+
+
+
+
 
 
 }

@@ -22,13 +22,13 @@ public class WordPermutation {
         }
     }
 
-    private static String swap(String str, int i, int r) {
+    private static String swap(String str, int l, int i) {
        char temp;
 
        char word[]=str.toCharArray();
        temp=word[i];
-       word[i]=word[r];
-       word[r]=temp;
+       word[i]=word[l];
+       word[l]=temp;
 
         return String.valueOf(word);
     }
