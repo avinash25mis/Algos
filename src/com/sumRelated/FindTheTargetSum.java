@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-public class SumC {
+public class FindTheTargetSum {
 
     public static void main(String[] args) {
         int[] nums={2,3,4};
@@ -30,7 +30,6 @@ public class SumC {
 
 
         return result;
-        //
-        //
+
     }
 }

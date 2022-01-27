@@ -1,4 +1,4 @@
-package com.ingrediantBurger;
+package com.ingrediantAndBurger;
 
 import java.util.ArrayList;
 import java.util.Arrays;
