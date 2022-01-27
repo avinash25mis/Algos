@@ -1,6 +1,6 @@
 package com.slidingWindow.subArray;
 
-public class MaxSumSubArray {
+public class MaxSumInArrayWithGivenLength {
 /*
 see intro for detail
 in short we finding n consecutive element for maximum sum
