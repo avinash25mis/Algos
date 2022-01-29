@@ -4,6 +4,8 @@ package com.array;
  * @author avinash.a.mishra
  *
  * find the missing number in the sequence of number
+ *
+ * sum of n numbers is = n * (n + 1) / 2;
  */
 public class FindMissingNumber {
     static int getMissingNo(int a[], int n)

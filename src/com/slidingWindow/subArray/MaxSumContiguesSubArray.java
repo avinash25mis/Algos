@@ -1,7 +1,9 @@
-package com.array;
+package com.slidingWindow.subArray;
 
 /**
  * @author avinash.a.mishra
+ *
+ * find the maximum continuous sum from the array
  */
 public class MaxSumContiguesSubArray {
 
@@ -23,7 +25,7 @@ public class MaxSumContiguesSubArray {
 
             if (max_so_far < max_ending_here) {
                 max_so_far = max_ending_here;
-                end=i;
+
             }
             if (max_ending_here < 0) {
                 max_ending_here = 0;

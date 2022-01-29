@@ -26,9 +26,10 @@ public class LongestNonRepeatN {
         HashMap<Character, Integer> seen = new HashMap<>();
         int maximum_length = 0;
 
-        // starting the inital point of window to index 0
+        //  inital point of window to index 0 ie start/i =0
         int start = 0;
 
+        //counter inside the for will be end/j
         for(int end = 0; end < str.length(); end++)
         {
             // Checking if we have already seen the element or not

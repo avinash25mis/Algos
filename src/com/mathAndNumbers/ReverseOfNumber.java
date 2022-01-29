@@ -1,4 +1,4 @@
-package com.simpleNumbers;
+package com.mathAndNumbers;
 
 public class ReverseOfNumber {
     public static void main(String[] args) {
