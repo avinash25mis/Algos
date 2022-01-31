@@ -1,8 +1,9 @@
 package com.recursions;
 
 public class Palindrome {
+
     public static void main(String[] args) {
-        String str="nmadamn";
+        String str="abc";
         boolean isPalindrome = checkPalindrome(str, 0, str.length()-1);
         System.out.println(isPalindrome);
     }
@@ -17,22 +18,35 @@ public class Palindrome {
         return checkPalindrome(str,++i,--l);
     }
 
-
     /*
-    * more advance way
+    * In one function call, we are doing an O(1)
+    * recursive call is being done for at most n/2 times
+    * Thus the overall complexity will be O(n)
+    *
     * */
 
-    public static boolean isPal(String s)
-    {
-        if(s.length() == 0 || s.length() == 1)
-            return true;
-        if(s.charAt(0) == s.charAt(s.length()-1))
 
-            return isPal(s.substring(1, s.length()-1));
 
-        /* If program control reaches to this statement it means
-         * the String is not palindrome hence return false.
-         */
-        return false;
+
+
+
+    private static boolean isPalindromeBasic(String str) {
+        if (str == null)
+            return false;
+        StringBuilder strBuilder = new StringBuilder(str);
+        strBuilder.reverse();
+        return strBuilder.toString().equals(str);
+    }
+
+    private static boolean isPalindromeBasicByLoop(String str) {
+        if (str == null)
+            return false;
+        int length=str.length();
+        for (int i = 0; i < length / 2; i++) {
+
+            if (str.charAt(i) != str.charAt(length - 1- i)) //comparison  can be done via single i
+                return false;
+        }
+        return true;
     }
 }
