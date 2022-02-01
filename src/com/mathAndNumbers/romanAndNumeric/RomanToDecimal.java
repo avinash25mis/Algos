@@ -12,6 +12,20 @@ public class RomanToDecimal {
 *  luckily this cases max can cover 2 digit ie we do not have something like
 *  IIIV   or  IIIX or  XXXC
 * */
+
+ /*   main logic
+
+       if(s1>=s2){
+       result=result+s1;
+      }else{
+       result=result+s2-s1;
+           i++;
+         }
+
+ * */
+
+
+
     public static void main(String[] args) {
         String roman="XVIII";
         getIntegetFromRoman(roman);

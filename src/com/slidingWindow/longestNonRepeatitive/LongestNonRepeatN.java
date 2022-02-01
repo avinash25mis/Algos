@@ -6,16 +6,17 @@ import java.util.HashMap;
 /**
  * @author avinash.a.mishra
  *
- * the concept here is i & j will start from same position & keep incrementing  j,
- * till an  repeated elememt is found-
- * 1. we calculate the length &
- * 2. we increment i to j+1
+ * the concept here is i & j will start from same position &
+ * keep incrementing  j and find length (j-i+1),
+ * as soon as repeat is found we move i to the one next position to the last occurance (j-1+1)
+ * again loop runs j is increment
+ *
  * and keep incrementing j all over again till a repeat is found
  */
 public class LongestNonRepeatN {
 
     public static void main(String[] args) {
-        String str="aavinasha";
+        String str="aakvijaasha";
         // String str="vishal";
         getLongestNonRepeatingByArray(str);
         getLongestNonRepeatingByMap(str);
@@ -26,24 +27,35 @@ public class LongestNonRepeatN {
         HashMap<Character, Integer> seen = new HashMap<>();
         int maximum_length = 0;
 
-        //  inital point of window to index 0 ie start/i =0
-        int start = 0;
+        //  inital point of window to index 0 ie i/i =0
+        int i = 0;
+        int maxStart=-1;
+        int maxEnd=-1;
 
         //counter inside the for will be end/j
-        for(int end = 0; end < str.length(); end++)
+        for(int j = 0; j < str.length(); j++)
         {
             // Checking if we have already seen the element or not
-            if(seen.containsKey(str.charAt(end)))
+            if(seen.containsKey(str.charAt(j)))
             {
-                // If we have seen the number, move the start pointer
+                // If we have seen the number, move the i pointer
                 // to position after the last occurrence
-                start = Math.max(start, seen.get(str.charAt(end)) + 1);
+                i = Math.max(i, seen.get(str.charAt(j)) + 1);
             }
 
             // Updating the last seen index of the character
-            seen.put(str.charAt(end), end);
-            maximum_length = Math.max(maximum_length, end-start + 1);
+            seen.put(str.charAt(j), j);
+
+            if(j - i + 1 > maximum_length){
+                maximum_length=j - i + 1;
+                maxStart=i;
+                maxEnd=j;
+            }
+          //  maximum_length = Math.max(maximum_length, j - i + 1);
         }
+
+        System.out.println("max length:"+maximum_length);
+        System.out.println("indexes :"+maxStart+"-"+maxEnd);
         return maximum_length;
     }
 
@@ -51,7 +63,7 @@ public class LongestNonRepeatN {
     private static int getLongestNonRepeatingByArray(String str) {
 
         int longest = 0; // result
-        int bigining=-1;
+        int beginning=-1;
         int ending=-1;
         int [] arr = new int[256];
         Arrays.fill(arr, -1);
@@ -70,14 +82,15 @@ public class LongestNonRepeatN {
 
             // Update result if we get a larger window
             if(longest<j-i+1){
-                bigining=i;
+                beginning=i;
                 ending=j;
                 longest=j-i+1;
             }
             //longest = Math.max(longest, j - i + 1);
 
         }
-        System.out.println("Longest length: "+longest);
+        System.out.println("by array Longest length: "+longest);
+        System.out.println("indexes: "+beginning+"-"+ending);
         return longest;
     }
 }

@@ -19,7 +19,7 @@ public class RemoveRepititionInString {
 
     /*
     * need to note here the str.indexOf() is a overloaded funtion
-    * one accepts char(via int) and another accepts String
+    * one accepts char(int) and another accepts String
     *
     * and on the contrary str.contains() only accepts string
     *
@@ -28,6 +28,7 @@ public class RemoveRepititionInString {
     *
     * */
 
+    //we make a new string and only keep uniques chars in that string
     private static void replaceUsingIndexOf(String str) {
 
       String newStr="";

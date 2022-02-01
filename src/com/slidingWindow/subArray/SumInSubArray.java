@@ -9,7 +9,7 @@ public class SumInSubArray {
 
     public static void main(String[] args) {
         int arr[] = { 15, 2, 4, 8, 9, 5, 10, 23 };
-        int sum = 23;
+        int sum = 6;
         findSumInSubArray(arr,sum);
     }
 
@@ -22,15 +22,16 @@ public class SumInSubArray {
 
     private static int findSumInSubArray(int[] arr, int reqSum) {
 
-        int curr_sum = arr[0], start = 0;
+        int curr_sum = arr[0];
+        int i = 0;
 
         // Pick a starting point
         for (int j = 1; j <= arr.length; j++) {
 
-            // If curr_sum becomes equal to reqSum,
+            // If curr_sum becomes equal to reqSum in last iteration, and we have increment j
             if (curr_sum == reqSum) {
-                int p = j - 1;
-                System.out.println("Sum found between indexes " + start + " and " + p);
+                int end = j - 1;
+                System.out.println("Sum found between indexes " + i + " and " + end);
                 break;
             }
             if(j<arr.length) {
@@ -39,13 +40,10 @@ public class SumInSubArray {
 
             // If curr_sum exceeds the reqSum,
             // then move the starting elements
-            while (curr_sum > reqSum && start <= j - 1) {
-                curr_sum = curr_sum - arr[start];
-                start++;
+            while (curr_sum > reqSum && i <= j - 1) {
+                curr_sum = curr_sum - arr[i];
+                i++;
             }
-
-
-
 
         }
 

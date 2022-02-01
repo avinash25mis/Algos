@@ -1,7 +1,7 @@
 package com.sumRelated;
 
-import com.libraries.LinkedList.MyLinkListUtils;
-import com.libraries.LinkedList.SinglyNode;
+import com.a_libraries.LinkedList.MyLinkListUtils;
+import com.a_libraries.LinkedList.SinglyNode;
 
 public class SumOfTwoLinkedList {
 

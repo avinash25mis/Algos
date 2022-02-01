@@ -1,4 +1,4 @@
-package com.libraries.binayTree;
+package com.a_libraries.binayTree;
 
 /**
  * @author avinash.a.mishra

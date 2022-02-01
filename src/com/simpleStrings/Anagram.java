@@ -16,7 +16,7 @@ import java.util.Arrays;
 
      A-Z => 65-90
      a-z => 97-122
-     we can also observe the diff between lowecase a and uppercase A is 32 and is constant
+     observe the diff between lowecase a and uppercase A is 32 and so on
 
      to utilize the arr index from begning  we use  [str.charAt(i)-'a'] so that a is placed at 0 index
      b is placed at 1th index and so on

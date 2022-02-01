@@ -14,8 +14,6 @@ public class MaxSumContiguesSubArray {
     }
 
     static int maxSubArraySum(int a[]) {
-        int start=-1;
-        int end=-1;
         int size = a.length;
         int max_so_far = Integer.MIN_VALUE;
         int max_ending_here = 0;
