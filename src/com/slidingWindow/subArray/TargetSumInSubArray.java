@@ -5,7 +5,7 @@ package com.slidingWindow.subArray;
  *
  * find the given sum in any sub-array of the array
  */
-public class SumInSubArray {
+public class TargetSumInSubArray {
 
     public static void main(String[] args) {
         int arr[] = { 15, 2, 4, 8, 9, 5, 10, 23 };

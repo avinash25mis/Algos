@@ -14,7 +14,12 @@ public class NumOfSmallAndBigBurger {
         int twoX = tomatoSlices - 2 * cheeseSlices;
         int x = twoX / 2;
         int y = cheeseSlices - x;
-        return twoX >= 0 && twoX % 2 == 0 && y >= 0 ? Arrays.asList(x, y) : new ArrayList<>();
+        if(twoX>=0 && twoX % 2 == 0 && y >= 0){
+            return Arrays.asList(x, y);
+        }else{
+            return new ArrayList();
+        }
+
     }
 
 }

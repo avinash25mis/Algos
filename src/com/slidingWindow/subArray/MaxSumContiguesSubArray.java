@@ -9,8 +9,7 @@ public class MaxSumContiguesSubArray {
 
     public static void main(String[] args) {
         int[] a = {60, -3, -4, 10,20 ,5, -1, -5, -3};
-        System.out.println("Maximum contiguous sum is " +
-                maxSubArraySum(a));
+        maxSubArraySum(a);
     }
 
     static int maxSubArraySum(int a[]) {
@@ -29,6 +28,11 @@ public class MaxSumContiguesSubArray {
                 max_ending_here = 0;
             }
         }
+
+        System.out.println("Maximum contiguous sum is " +max_ending_here);
         return max_so_far;
+
+
+
     }
 }

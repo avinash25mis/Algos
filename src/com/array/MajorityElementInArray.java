@@ -26,6 +26,8 @@ public class MajorityElementInArray {
     * Time Complexity: O(n).
       Auxiliary Space: O(n).
       Since a hashmap requires linear space.
+      The trick here is while we are putting elements we are also validating
+      * if majority is reached
     * */
 
     private static void majorityByMap(int[] arr) {

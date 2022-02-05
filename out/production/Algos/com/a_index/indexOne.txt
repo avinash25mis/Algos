@@ -1,0 +1,23 @@
+Indexing just the tricky questions
+
+
+1. Number of small & big burgers which can be prepaid from given tommatos and slices
+
+2.Find longest consecutive increasing/decreasing by 1 or by any digits
+
+3. match the opening & closing brackets
+
+4.Decimal/Integer to Roman Numbers
+
+5.Roman to decimal number conversion
+
+6.word/array permutations
+
+7. fibonacci & palindromic
+
+8.Maximum profit on selling the stock
+
+9. find if two strings are anagram without sorting them in O(n)
+
+10. find longest non repeating character length in string  in O(n)
+

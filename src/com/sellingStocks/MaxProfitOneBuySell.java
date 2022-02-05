@@ -25,7 +25,7 @@ public class MaxProfitOneBuySell {
 
         for (int j = 1; j < arr_size; j++)
         {
-            //we  maximum difference as we move
+            //we record the maximum difference as we move
             if (arr[j] - arr[i] > max_diff) {
                 max_diff = arr[j] - arr[i];
             }
@@ -33,7 +33,7 @@ public class MaxProfitOneBuySell {
             if (arr[j] < arr[i]) {
                 i = j;
             }
-            //even if we change the min element here, in the next iteration j will be j++
+            //even if we change the i  here, in the next iteration j will be j++
         }
         System.out.println("O(N)-"+max_diff);
         return max_diff;
