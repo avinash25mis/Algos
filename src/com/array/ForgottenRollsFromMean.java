@@ -1,5 +1,7 @@
 package com.array;
 
+import java.util.Arrays;
+
 /**
  * @author avinash.a.mishra
  *
@@ -13,29 +15,51 @@ public class ForgottenRollsFromMean {
        int actualMean=4;  //12+/6
 /*         function should return [6,5]*/
       solution(remembered,forgot,actualMean);
+      //getAwayToASum(13,3);
   }
-    public static int[] solution(int[] A, int F, int M) {
+    public static int[] solution(int[] A, int forgotenCount, int M) {
         int currentSum=0;
-        int forgot[]=new int[F];
+        int forgotArray[]=new int[forgotenCount];
         int notPossible[]=new int[1];
-        int totalElement=F+A.length;
+        int totalElement=forgotenCount+A.length;
         for(int i=0;i<A.length;i++){
             currentSum=currentSum+A[i];
         }
 
-        if(F<1|| M<1|| M>6){
+        if(forgotenCount<1|| M<1|| M>6){
             return notPossible;
         }
-     //mean=sum/totalElement
-        int actualSum=(M*totalElement)-currentSum;
-        if(F>actualSum || actualSum/F>6){
+    /*   mean = sum / totalElement
+      sum = mean * totalElement   */
+        int requiredSum=(M*totalElement)-currentSum;
+        //required sum of forgotten dices
+        if(forgotenCount>requiredSum || requiredSum/forgotenCount>6){
             return notPossible;
         }
 
-        for(int j=0;j<forgot.length;j++){
-            forgot[j]=actualSum/F--;
-            actualSum=actualSum-forgot[j];
+        for(int j=0;j<forgotArray.length;j++){
+            forgotArray[j]=requiredSum/forgotenCount--;
+            requiredSum=requiredSum-forgotArray[j];
         }
-        return forgot;
+        return forgotArray;
+    }
+
+
+
+
+
+    /*
+    * The code to test the logic
+    *
+    * */
+     public static void getAwayToASum(int requiredSum,int forgotenCount){
+      int [] forgotArray = new int[forgotenCount];
+         for(int j=0;j<forgotArray.length;j++){
+             forgotArray[j]=requiredSum/forgotenCount--;
+             requiredSum=requiredSum-forgotArray[j];
+         }
+
+         System.out.println(Arrays.toString(forgotArray));
+
     }
 }

@@ -1,6 +1,6 @@
 package com.recursions;
 
-public class fibonacci {
+public class fibonacciRecursion {
 
 
     /*

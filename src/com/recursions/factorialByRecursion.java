@@ -1,6 +1,6 @@
 package com.recursions;
 
-public class factorial {
+public class factorialByRecursion {
 
     public static void main(String[] args) {
         int n=5;

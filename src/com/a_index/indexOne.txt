@@ -1,7 +1,8 @@
 Indexing just the tricky questions
 
 
-1.Number of small & big burgers which can be prepaid from given tommatos and slices
+1. Number of small & big burgers which can be prepaid from given tommatos and slices
+ small=2t+b   big=4t+b
 
 2.Find longest consecutive increasing/decreasing by 1 or by any digits
 

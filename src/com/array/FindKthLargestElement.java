@@ -61,19 +61,22 @@ public class FindKthLargestElement {
 
         for (int i = 0; i < arr.length; i++) {
           /*  mapping every element with it's frequency
-          * this is the shorter way then the conventional way of if(map.get()!=null) then incrementing the  counter
+          * this is the shorter way then the conventional way of
+          * if(map.get()!=null) then incrementing the  counter & put back
           * */
 
             m.put(arr[i], m.getOrDefault(arr[i], 0) + 1);
+            /* if present then increase the occurance count by + 1
+             if not present then null+1 will give exception hence 0+1*/
         }
 
 
         int freq = 0;
 
-        for (Map.Entry it : m.entrySet())
+        for (Map.Entry<Integer,Integer> it : m.entrySet())
         {
             // adding the frequencies of each element
-            freq =freq + (int) it.getValue();
+            freq = freq +  it.getValue();
 
             if (freq >= k) {
                 return (int)it.getKey();
