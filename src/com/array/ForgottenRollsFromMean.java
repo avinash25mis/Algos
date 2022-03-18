@@ -15,7 +15,7 @@ public class ForgottenRollsFromMean {
        int actualMean=4;  //12+/6
 /*         function should return [6,5]*/
       solution(remembered,forgot,actualMean);
-      //getAwayToASum(13,3);
+
   }
     public static int[] solution(int[] A, int forgotenCount, int M) {
         int currentSum=0;
@@ -48,18 +48,5 @@ public class ForgottenRollsFromMean {
 
 
 
-    /*
-    * The code to test the logic
-    *
-    * */
-     public static void getAwayToASum(int requiredSum,int forgotenCount){
-      int [] forgotArray = new int[forgotenCount];
-         for(int j=0;j<forgotArray.length;j++){
-             forgotArray[j]=requiredSum/forgotenCount--;
-             requiredSum=requiredSum-forgotArray[j];
-         }
 
-         System.out.println(Arrays.toString(forgotArray));
-
-    }
 }

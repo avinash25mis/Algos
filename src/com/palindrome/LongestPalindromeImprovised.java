@@ -18,7 +18,8 @@ public class LongestPalindromeImprovised {
     * The trick here is to reduce the upper nested loops (i & j) to one (i)
     * we can start from center and call the check palindrome with only i itself
     *
-    * only concern here is that a palindrom can  have odd no of alphbet as well as even no of alphabets
+    * only concern here is that a palindrom can  have odd no of alphabet (kak) as well as
+    *  even no of alphabets(akka)
     * so to consider the even no of alphabet we start with taking middle two elements (i,i+1)
     * and to consider the odd no of alphabet we start with  (i,i)
     *

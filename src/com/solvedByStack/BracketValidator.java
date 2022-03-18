@@ -1,4 +1,4 @@
-package com.matchBracesAndBracket;
+package com.solvedByStack;
 
 import java.util.*;
 
@@ -6,8 +6,8 @@ public class BracketValidator {
 
     /*
       last in first out
-    * the whole logic will be build on when we get a closing bracket
-    * the last element in the stack should be same bracket
+    * the whole logic will be build on when we get a closing bracket  ("}")
+    * the last element in the stack should be  optioning of that bracket ("{")
     * */
 
     /*

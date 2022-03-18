@@ -11,6 +11,14 @@ public class ConsecutiveAndIncreasing {
         findLongestConsecutiveViaArray(arr);
     }
 
+    /*
+    *
+    * or if the count is reset we do not have to start gain from i+1
+    * because if the count is being reset it mean they are not consecutive and
+    *  we must not go back and start as we do for lonegest palindrome
+    *
+    * */
+
     private static void findLongestConsecutiveViaArray(int[] arr) {
         int count=1;  //count and longest has to be 1 by default
         int longest=-1;
@@ -34,7 +42,8 @@ public class ConsecutiveAndIncreasing {
         int longest=1; //count and longest has to be 1 by default
         int count=1;
 
-       //generally this portion is to remove duplicate but here just doing for no reason
+       //generally this portion is to remove duplicate
+        // but here just doing to convert array to arrayList
         for (int i = 0; i < arr.length; i++)
         {
             list.add(arr[i]);
