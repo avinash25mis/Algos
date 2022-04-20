@@ -1,4 +1,4 @@
-package com.array;
+package com.MeanAndAverage;
 
 import java.util.Arrays;
 
