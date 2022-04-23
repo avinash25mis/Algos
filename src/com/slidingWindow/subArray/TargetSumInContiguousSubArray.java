@@ -5,11 +5,11 @@ package com.slidingWindow.subArray;
  *
  * find the given sum in any sub-array of the array
  */
-public class TargetSumInSubArray {
+public class TargetSumInContiguousSubArray {
 
     public static void main(String[] args) {
-        int arr[] = { 15, 2, 4, 8, 9, 5, 10, 23 };
-        int sum = 6;
+        int arr[] = { 16, 2, 4, 8, 9, 5, 10, 23 };
+        int sum = 17;
         findSumInSubArray(arr,sum);
     }
 

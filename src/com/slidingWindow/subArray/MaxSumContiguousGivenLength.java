@@ -1,6 +1,6 @@
 package com.slidingWindow.subArray;
 
-public class MaxSumInArrayWithGivenLength {
+public class MaxSumContiguousGivenLength {
 /*
 see intro for detail
 in short we finding n consecutive element for maximum sum
@@ -19,9 +19,9 @@ in short we finding n consecutive element for maximum sum
 
         int i = 0, j = 0;
         //first find the sum of first k
-        while (j - i + 1 <= k) {
+        while ((j - i + 1) <= k) {
             sum = sum + arr[j];
-            j++;
+            j++; // j has to reach the end as of k specified
         }
         maxSum=sum;
 
