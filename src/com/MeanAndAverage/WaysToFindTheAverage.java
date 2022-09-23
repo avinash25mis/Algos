@@ -14,12 +14,21 @@ import java.util.Map;
 * [2],  [1,3] , [2,1,3]
 * 3 ways in which mean comes to be 2
 *
+* A=[7, 9, 8, 9] , S=8
+*  {7, 9}, {8}, and {7, 9, 8}
+* 3 ways
+*
+* * A=[2, 2, 2] , S=2
+ *
+ * 6 ways
+ * {2}   {2}  {2}
+ * {2,2} , {2,2,2} , {2,2}
 *
 * */
 public class WaysToFindTheAverage {
 
     public static void main(String[] args) {
-        int arr[]={2,1,3};
+        int arr[]={2, 2, 2};
         int s=2;
         solution(arr,s);
     }
