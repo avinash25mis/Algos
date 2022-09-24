@@ -58,12 +58,11 @@ public class MajorityElementInArray {
     */
 
     private static void majority(int[] arr) {
-        Arrays.sort(arr);
+        Arrays.sort(arr);// wasting o(n) here
 
         int count = 1, maxElementCount = -1, maxElement=0;
+
         int  temp = arr[0];
-
-
         for(int i = 1; i < arr.length; i++)
         {
             if (temp == arr[i])

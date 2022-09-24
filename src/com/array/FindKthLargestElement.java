@@ -43,8 +43,10 @@ public class FindKthLargestElement {
    * 16  | 1
    * 17  | 1
    *
+   * second part
+   * -----------------
    * now (freq of 0) + (freq of 7) = 2+1=3
-   * so the third smallest number is 7
+   * so the third largest number is 7
    *
    * here we can ignore duplicates if we count each as 1 or use TreeSet instead
    * only condition here to start with TreeMap which is bydefault sorted
@@ -67,7 +69,7 @@ public class FindKthLargestElement {
 
             m.put(arr[i], m.getOrDefault(arr[i], 0) + 1);
             /* if present then increase the occurance count by + 1
-             if not present then null+1 will give exception hence 0+1*/
+             if not present then null+1 will give exception hence default 0-- 0+1*/
         }
 
 
@@ -79,7 +81,7 @@ public class FindKthLargestElement {
             freq = freq +  it.getValue();
 
             if (freq >= k) {
-                return (int)it.getKey();
+                return (int)it.getKey();  //return as soon as you get the count
             }
         }
 
