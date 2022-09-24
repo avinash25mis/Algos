@@ -9,7 +9,7 @@ public class PalindromCoreLogic {
     }
 
 
-    //j-1+1 since k starting from 0
+    //j-i+1     (+1 since k starting from 0)
     public static void coreLogic(int i,int j,String str){
         boolean flag=true;
         for (int k = 0; k < (j - i + 1) / 2; k++) {
