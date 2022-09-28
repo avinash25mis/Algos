@@ -1,6 +1,6 @@
-package com.a_Logics;
+package com.slidingWindow;
 
-public class SlidingWayToFindMaxCount {
+public class SlidingWayToFindCount {
 
 
     /*

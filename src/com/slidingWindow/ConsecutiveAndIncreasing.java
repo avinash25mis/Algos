@@ -1,4 +1,4 @@
-package com.longestCosecutive;
+package com.slidingWindow;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,6 +35,10 @@ public class ConsecutiveAndIncreasing {
 
         System.out.println("longest length :"+longest);
     }
+
+
+
+
 
     private static void findLongestConsecutive(int[] arr) {
         List<Integer> list= new ArrayList<>();
