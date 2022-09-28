@@ -74,7 +74,7 @@ public class ConsecutiveAndIncreasing {
 
 
     /*
-   for removing duplicates while
+   for removing duplicates while generating the list
 
       for (int i = 1; i < arr.length; i++)
         {

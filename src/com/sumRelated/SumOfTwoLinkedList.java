@@ -20,8 +20,8 @@ public class SumOfTwoLinkedList {
         while (p != null || q != null) {
             int x = (p != null) ? p.val : 0;
             int y = (q != null) ? q.val : 0;
-            int sum = carry + x + y;
-            carry = sum / 10;
+            int sum = carry + x + y; //imp
+            carry = sum / 10;   //imp
             curr.next = new SinglyNode(sum % 10);
             curr = curr.next; //moving pointer to next
             if (p != null) p = p.next;

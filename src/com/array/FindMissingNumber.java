@@ -8,16 +8,7 @@ package com.array;
  * sum of n numbers is = n * (n + 1) / 2;
  */
 public class FindMissingNumber {
-    static int getMissingNo(int a[], int n)
-    {
-        int idealSum = n * (n + 1) / 2;
-        int sum = 0;
 
-        for(int i = 0; i < n - 1; i++)
-            sum += a[i];
-
-        return idealSum - sum;
-    }
 
     // Driver code
     public static void main(String[] args)
@@ -27,5 +18,17 @@ public class FindMissingNumber {
         int miss = getMissingNo(a, n);
 
         System.out.print(miss);
+    }
+
+
+    static int getMissingNo(int a[], int n)
+    {
+        int idealSum = n * (n + 1) / 2;
+        int sum = 0;
+
+        for(int i = 0; i < n - 1; i++)
+            sum += a[i];
+
+        return idealSum - sum;
     }
 }

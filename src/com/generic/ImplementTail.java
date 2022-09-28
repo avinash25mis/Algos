@@ -1,4 +1,4 @@
-package com.fileHandling;
+package com.generic;
 
 import java.io.*;
 import java.util.ArrayList;

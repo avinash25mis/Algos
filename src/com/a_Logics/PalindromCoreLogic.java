@@ -9,6 +9,10 @@ public class PalindromCoreLogic {
     }
 
 
+    /*
+    * this is a core logic for finding palindrome for a subString of the actuall string
+    *
+    * */
     //j-i+1     (+1 since k starting from 0)
     public static void coreLogic(int i,int j,String str){
         boolean flag=true;

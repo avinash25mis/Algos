@@ -2,7 +2,10 @@ package com.mathAndNumbers;
 
 
 /*
- amstrong number is sum of all digit  to the power ^(number of digits)
+ amstrong number
+ sum of all digit  to the power ^ (number of digits)
+
+ number of digits is the keyword here
 *
 * 153
 * 1^3 + 5^3 + 3^3 = 1 + 125+ 27 = 153

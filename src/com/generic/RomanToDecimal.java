@@ -1,4 +1,4 @@
-package com.mathAndNumbers.romanAndNumeric;
+package com.generic;
 
 public class RomanToDecimal {
 
