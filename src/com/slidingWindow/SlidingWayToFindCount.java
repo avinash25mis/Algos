@@ -1,5 +1,8 @@
 package com.slidingWindow;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class SlidingWayToFindCount {
 
 
@@ -25,6 +28,10 @@ public class SlidingWayToFindCount {
 
           case 3:
               findLongestConsecutiveAnother(arr);
+            break;
+
+            case 4:
+                findLongestConsecutiveforList(arr);
             break;
 
       }
@@ -98,6 +105,58 @@ public class SlidingWayToFindCount {
         System.out.println("longest length :"+longest);
     }
 
+
+
+    private static void findLongestConsecutiveforList(int[] arr) {
+        List<Integer> list= new ArrayList<>();
+
+        int longest=1; //count and longest has to be 1 by default
+        int count=1;
+
+        //generally this portion is to remove duplicate
+        // but here just doing to convert array to arrayList
+        for (int i = 0; i < arr.length; i++)
+        {
+            list.add(arr[i]);
+
+        }
+
+
+        // i will be from 0 as list  start from 0
+        for (int i = 0; i < list.size(); i++)
+        {
+            // Check if the current element is just one digit greater/smaller than previous element
+            if ( i!=0 && (list.get(i) == list.get(i - 1) + 1) ) {
+                count++;
+            }
+            else {
+                count = 1;
+                //resetting the counter
+            }
+            // recording the counter at each traversal
+            longest = Math.max(longest, count);
+
+        }
+        System.out.println("count via list :"+longest);
+
+    }
+
+
+
+
+    /*
+   for removing duplicates while generating the list
+
+      for (int i = 1; i < arr.length; i++)
+        {
+            if (arr[i] != arr[i - 1]){
+                list.add(arr[i]);
+                }
+
+        }
+
+
+    * */
 
 
 }

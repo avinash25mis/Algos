@@ -10,7 +10,7 @@ public class SumOfTwoArray {
     * remember
     *
     *  3 % 10 == 3, use remender to store the sum
-    *  3 /10 == 0,  use actuall divide the get the carry digit
+    *  3 / 10 == 0,  use actuall divide the get the carry digit
     *
     * */
     public static void main(String[] args) {
