@@ -5,13 +5,15 @@ import java.util.*;
 public class BracketValidator {
 
     /*
+
+      { ( ) }  or   {} ()   or  { ( [  ]  ) }
       last in first out
-    * the whole logic will be build on when we get a closing bracket  ("}")
-    * the last element in the stack should be  optioning of that bracket ("{")
+    * the whole logic will be build on when we get a closing bracket "}" to put it in stack
+    * we need to check that the last element in the stack should be  opening of that bracket "{"
     * */
 
     /*
-    * ie each closer responds to most recently seen opener
+    * each closer responds to most recently seen opener
     * at last if stack is empty then everything is in pair and in perfect order
     * */
 
@@ -41,10 +43,10 @@ public class BracketValidator {
         openersToClosers.put('[', ']');
         openersToClosers.put('{', '}');
 
-        Set<Character> openers = openersToClosers.keySet();
+        Set<Character> openers = new HashSet<>(openersToClosers.keySet());
         Set<Character> closers = new HashSet<>(openersToClosers.values());
 
-        Deque<Character> openersStack = new ArrayDeque<>();
+        Deque<Character> openersStack = new ArrayDeque<>();// a empty stack
 
         for (int i = 0; i < str.length(); i++) {
             char c = str.charAt(i);

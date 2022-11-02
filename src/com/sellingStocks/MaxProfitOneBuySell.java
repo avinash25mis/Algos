@@ -25,7 +25,7 @@ public class MaxProfitOneBuySell {
 
         for (int j = 1; j < arr_size; j++)
         {
-            //we record the maximum difference as we move
+            //we record the maximum difference as we move and check if current max is greater
             if (arr[j] - arr[i] > max_diff) {
                 max_diff = arr[j] - arr[i];
             }

@@ -14,6 +14,5 @@ public class factorialByRecursion {
         }
         return n * findFactorial(n-1);
         //we direct multiplying with the result of the method return
-
     }
 }

@@ -27,10 +27,12 @@ public class LongestNonRepeatN {
         HashMap<Character, Integer> seen = new HashMap<>();
         int maximum_length = 0;
 
-        //  inital point of window to index 0 ie i/i =0
-        int i = 0;
+
         int maxStart=-1;
         int maxEnd=-1;
+
+        //  inital point of window to index 0 ie i/i =0
+        int i = 0;
 
         //counter inside the for will be end/j
         for(int j = 0; j < str.length(); j++)
@@ -40,14 +42,14 @@ public class LongestNonRepeatN {
             {
                 // If we have seen the number, move the i pointer
                 // to position after the last occurrence
-                i = Math.max(i, seen.get(str.charAt(j)) + 1);
+                i = Math.max(i, seen.get(str.charAt(j)) + 1);//
             }
 
             // Updating the last seen index of the character
             seen.put(str.charAt(j), j);
 
             if(j - i + 1 > maximum_length){
-                maximum_length=j - i + 1;
+                maximum_length =j - i + 1;
                 maxStart=i;
                 maxEnd=j;
             }

@@ -1,5 +1,7 @@
 package com.array;
 
+import java.util.stream.Stream;
+
 /**
  * @author avinash.a.mishra
  *
@@ -23,6 +25,8 @@ public class FindMissingNumber {
 
     static int getMissingNo(int a[], int n)
     {
+        Stream.of(1,2,3,4,5,6,7).skip(5).forEach(num-> System.out.println(num+""));
+        System.out.println("tttt");
         int idealSum = n * (n + 1) / 2;
         int sum = 0;
 
